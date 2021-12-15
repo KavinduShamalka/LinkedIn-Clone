@@ -8,7 +8,7 @@ const Leftside = (props) => {
                 <CradBackground />
                 <a>
                     <Photo />
-                    <Link>Wlocome, there !</Link>
+                    <Link>Wlocome, there!</Link>
                 </a>
                 <a>
                     <AddPhotoText>Add a photo</AddPhotoText>
@@ -58,13 +58,14 @@ const Leftside = (props) => {
 }
 
 const Container = styled.div`
-    grid-area: Leftside; 
+    grid-area: leftside; 
 
 `;
 
 const ArtCard = styled.div`
     text-align: center;
     overflow: hidden;
+    margin-bottom: 8px;
     background-color: #fff;
     border-radius: 5px;
     transition: box-shadow 83ms;
@@ -207,6 +208,7 @@ const CommunityCard = styled(ArtCard)`
     &:last-child {
         color: rgba(0, 0, 0, 0.6);
         text-decoration: none;
+        
         border-top: 1px solid #d6cec2;
         padding: 12px;
         &:hover {

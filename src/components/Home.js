@@ -8,15 +8,19 @@ const Home = (props) => {
     return (
         <Container>
             <Section>
-                <h5><a>Hiring in a hurry? - </a></h5>
-                <p> Find talented pros in record time with Upwork and keep business moving.</p>
+                <h5>
+                    <a>Hiring in a hurry? - </a>
+                </h5>
+                <p>
+                    Find talented pros in record time with Upwork and keep business 
+                    moving.
+                </p>
             </Section>
             <Layout>
                <Leftside />
                <Main />
                <Rightside />
             </Layout>
-
         </Container>
     );
     
@@ -71,8 +75,7 @@ const Layout = styled.div`
     grid-template-columns: minmax(0, 5fr) minmax(0, 12fr) minmax(300px, 7fr);
     column-gap: 25px;
     row-gap: 25px;
-    grid-template-rows: auto;
-    margin: 25px;
+    margin: 25px 0;
     @media (max-width: 768px){
         display: flex;
         flex-direction: column;
