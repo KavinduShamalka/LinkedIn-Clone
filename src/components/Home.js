@@ -23,7 +23,6 @@ const Home = (props) => {
             </Layout>
         </Container>
     );
-    
 };
 
 const Container = styled.div`
@@ -71,7 +70,7 @@ const Section = styled.section`
 
 const Layout = styled.div`
     display: grid;
-    grid-template-areas:"leftside middle rightside" ;
+    grid-template-areas:"leftside main rightside" ;
     grid-template-columns: minmax(0, 5fr) minmax(0, 12fr) minmax(300px, 7fr);
     column-gap: 25px;
     row-gap: 25px;
